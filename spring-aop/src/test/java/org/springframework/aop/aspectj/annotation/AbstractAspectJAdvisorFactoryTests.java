@@ -414,7 +414,7 @@ abstract class AbstractAspectJAdvisorFactoryTests {
 		lockable.locked();
 	}
 
-	// TODO: Why does this test fail? It hasn't been run before, so it maybe never actually passed...
+	// : Why does this test fail? It hasn't been run before, so it maybe never actually passed...
 	@Test
 	@Disabled
 	void introductionWithArgumentBinding() {
@@ -462,7 +462,7 @@ abstract class AbstractAspectJAdvisorFactoryTests {
 				itb::getAge);
 	}
 
-	// TODO document this behaviour.
+	//  document this behaviour.
 	// Is it different AspectJ behaviour, at least for checked exceptions?
 	@Test
 	void aspectMethodThrowsExceptionIllegalOnSignature() {

@@ -305,7 +305,7 @@ public class ModelAttributeMethodArgumentResolverTests {
 		assertThat(condition).isTrue();
 	}
 
-	// TODO: SPR-15871, SPR-15542
+	// : SPR-15871, SPR-15542
 
 
 	private ModelAttributeMethodArgumentResolver createResolver() {

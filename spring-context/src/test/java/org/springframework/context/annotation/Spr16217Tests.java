@@ -28,7 +28,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 public class Spr16217Tests {
 
 	@Test
-	@Disabled("TODO")
+	@Disabled("")
 	public void baseConfigurationIsIncludedWhenFirstSuperclassReferenceIsSkippedInRegisterBeanPhase() {
 		try (AnnotationConfigApplicationContext context =
 					new AnnotationConfigApplicationContext(RegisterBeanPhaseImportingConfiguration.class)) {

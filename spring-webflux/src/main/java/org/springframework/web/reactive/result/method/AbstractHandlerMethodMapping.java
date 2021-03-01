@@ -97,7 +97,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 	private final MappingRegistry mappingRegistry = new MappingRegistry();
 
 
-	// TODO: handlerMethodMappingNamingStrategy
+	// : handlerMethodMappingNamingStrategy
 
 	/**
 	 * Return a (read-only) map with all mappings and HandlerMethod's.

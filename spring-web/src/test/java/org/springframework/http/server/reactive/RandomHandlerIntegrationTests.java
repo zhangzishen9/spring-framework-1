@@ -60,7 +60,7 @@ class RandomHandlerIntegrationTests extends AbstractHttpHandlerIntegrationTests 
 	void random(HttpServer httpServer) throws Exception {
 		startServer(httpServer);
 
-		// TODO: fix Reactor support
+		// : fix Reactor support
 
 		RestTemplate restTemplate = new RestTemplate();
 

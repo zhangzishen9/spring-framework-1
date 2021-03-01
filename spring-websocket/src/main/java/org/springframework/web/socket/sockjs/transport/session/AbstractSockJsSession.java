@@ -75,7 +75,7 @@ public abstract class AbstractSockJsSession implements SockJsSession {
 	 * Tomcat: ClientAbortException or EOFException
 	 * Jetty: EofException
 	 * WildFly, GlassFish: java.io.IOException "Broken pipe" (already covered)
-	 * <p>TODO:
+	 * <p>:
 	 * This definition is currently duplicated between HttpWebHandlerAdapter
 	 * and AbstractSockJsSession. It is a candidate for a common utility class.
 	 * @see #indicatesDisconnectedClient(Throwable)

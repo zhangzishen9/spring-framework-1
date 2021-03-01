@@ -394,7 +394,7 @@ public class QuartzSupportTests {
 
 	/**
 	 * SPR-6038: detect HSQL and stop illegal locks being taken.
-	 * TODO: Against Quartz 2.2, this test's job doesn't actually execute anymore...
+	 * : Against Quartz 2.2, this test's job doesn't actually execute anymore...
 	 */
 	@Test
 	public void schedulerWithHsqlDataSource() throws Exception {

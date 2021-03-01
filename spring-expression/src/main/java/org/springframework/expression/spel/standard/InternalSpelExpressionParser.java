@@ -717,7 +717,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 
 	/**
 	 * Eat an identifier, possibly qualified (meaning that it is dotted).
-	 * TODO AndyC Could create complete identifiers (a.b.c) here rather than a sequence of them? (a, b, c)
+	 *  AndyC Could create complete identifiers (a.b.c) here rather than a sequence of them? (a, b, c)
 	 */
 	private SpelNodeImpl eatPossiblyQualifiedId() {
 		Deque<SpelNodeImpl> qualifiedIdPieces = new ArrayDeque<>();
@@ -767,7 +767,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 			// method reference
 			push(new MethodReference(nullSafeNavigation, methodOrPropertyName.stringValue(),
 					methodOrPropertyName.startPos, methodOrPropertyName.endPos, args));
-			// TODO what is the end position for a method reference? the name or the last arg?
+			//  what is the end position for a method reference? the name or the last arg?
 			return true;
 		}
 		return false;
@@ -808,7 +808,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 			else {
 				// regular constructor invocation
 				eatConstructorArgs(nodes);
-				// TODO correct end position?
+				//  correct end position?
 				push(new ConstructorReference(newToken.startPos, newToken.endPos, nodes.toArray(new SpelNodeImpl[0])));
 			}
 			return true;

@@ -44,7 +44,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @SpringJUnitConfig
 @Transactional
-// TODO Update assertions once https://github.com/spring-projects/spring-framework/issues/24869 is fixed.
+//  Update assertions once https://github.com/spring-projects/spring-framework/issues/24869 is fixed.
 class LookUpTxMgrViaTransactionManagementConfigurerWithPrimaryTxMgrTests {
 
 	@Autowired

@@ -132,28 +132,28 @@ class KotlinMethodParameterTests {
 	class RegularClass(nonNullable: String, nullable: String?)
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun suspendFun(p1: String): Number = TODO()
+	suspend fun suspendFun(p1: String): Number = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun suspendFun2(p1: String): Producer<Number> = TODO()
+	suspend fun suspendFun2(p1: String): Producer<Number> = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun suspendFun3(p1: String): Wrapper<Number> = TODO()
+	suspend fun suspendFun3(p1: String): Wrapper<Number> = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun suspendFun4(p1: String): Consumer<Number> = TODO()
+	suspend fun suspendFun4(p1: String): Consumer<Number> = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun <T: Producer<Number>> suspendFun5(p1: String): T = TODO()
+	suspend fun <T: Producer<Number>> suspendFun5(p1: String): T = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun <T: Wrapper<Number>> suspendFun6(p1: String): T = TODO()
+	suspend fun <T: Wrapper<Number>> suspendFun6(p1: String): T = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun <T: Consumer<Number>> suspendFun7(p1: String): T = TODO()
+	suspend fun <T: Consumer<Number>> suspendFun7(p1: String): T = ()
 
 	@Suppress("unused", "unused_parameter")
-	suspend fun suspendFun8(p1: String): Any? = TODO()
+	suspend fun suspendFun8(p1: String): Any? = ()
 }
 
 interface Producer<out T>

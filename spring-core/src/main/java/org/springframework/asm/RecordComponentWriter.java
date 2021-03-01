@@ -33,7 +33,7 @@ final class RecordComponentWriter extends RecordComponentVisitor {
   private final SymbolTable symbolTable;
 
   // Note: fields are ordered as in the component_info structure, and those related to attributes
-  // are ordered as in Section TODO of the JVMS.
+  // are ordered as in Section  of the JVMS.
   // The field accessFlag doesn't exist in the component_info structure but is used to carry
   // ACC_DEPRECATED which is represented by an attribute in the structure and as an access flag by
   // ASM.

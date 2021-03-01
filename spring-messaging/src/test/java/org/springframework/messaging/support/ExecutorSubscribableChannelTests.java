@@ -223,7 +223,7 @@ public class ExecutorSubscribableChannelTests {
 			this.messageToReturn = messageToReturn;
 		}
 
-		// TODO Determine why setExceptionToRaise() is unused.
+		//  Determine why setExceptionToRaise() is unused.
 		@SuppressWarnings("unused")
 		public void setExceptionToRaise(RuntimeException exception) {
 			this.exceptionToRaise = exception;

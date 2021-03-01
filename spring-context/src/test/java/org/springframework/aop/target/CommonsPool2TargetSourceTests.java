@@ -37,7 +37,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 /**
  * Tests for pooling invoker interceptor.
- * TODO: need to make these tests stronger: it's hard to
+ * : need to make these tests stronger: it's hard to
  * make too many assumptions about a pool.
  *
  * @author Rod Johnson
@@ -98,7 +98,7 @@ public class CommonsPool2TargetSourceTests {
 		SideEffectBean pooled = (SideEffectBean) beanFactory.getBean("pooledWithMixin");
 		assertThat(pooled.getCount()).isEqualTo(INITIAL_COUNT);
 		PoolingConfig conf = (PoolingConfig) beanFactory.getBean("pooledWithMixin");
-		// TODO one invocation from setup
+		//  one invocation from setup
 		//assertEquals(1, conf.getInvocations());
 		pooled.doWork();
 		//	assertEquals("No objects active", 0, conf.getActive());

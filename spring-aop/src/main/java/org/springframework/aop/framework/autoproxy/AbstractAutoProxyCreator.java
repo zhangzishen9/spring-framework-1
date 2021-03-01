@@ -245,6 +245,7 @@ public abstract class AbstractAutoProxyCreator extends ProxyProcessorSupport
 		Object cacheKey = getCacheKey(beanClass, beanName);
 
 		if (!StringUtils.hasLength(beanName) || !this.targetSourcedBeans.contains(beanName)) {
+			//this.avdisedBeans 需要被增强的bean
 			if (this.advisedBeans.containsKey(cacheKey)) {
 				return null;
 			}

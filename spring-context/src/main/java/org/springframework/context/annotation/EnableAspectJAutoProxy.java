@@ -119,6 +119,7 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
+//@Import注解导入AspectJAutoProxyRegistrar类 该类实现了ImportBeanDefinitionRegistrar 效果为往容器中注入一些类
 @Import(AspectJAutoProxyRegistrar.class)
 public @interface EnableAspectJAutoProxy {
 

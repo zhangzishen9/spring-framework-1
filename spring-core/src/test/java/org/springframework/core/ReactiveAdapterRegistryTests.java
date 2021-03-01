@@ -103,7 +103,7 @@ class ReactiveAdapterRegistryTests {
 		assertThat(((Flux<Integer>) target).collectList().block(Duration.ofMillis(1000))).isEqualTo(sequence);
 	}
 
-	// TODO: publisherToMono/CompletableFuture vs Single (ISE on multiple elements)?
+	// : publisherToMono/CompletableFuture vs Single (ISE on multiple elements)?
 
 	@Test
 	void publisherToMono() {

@@ -93,7 +93,7 @@ public class HotSwappableTargetSourceTests {
 		Object old = swapper.swap(target2);
 		assertThat(old).as("Correct old target was returned").isEqualTo(target1);
 
-		// TODO should be able to make this assertion: need to fix target handling
+		//  should be able to make this assertion: need to fix target handling
 		// in AdvisedSupport
 		//assertEquals(target2, ((Advised) proxied).getTarget());
 

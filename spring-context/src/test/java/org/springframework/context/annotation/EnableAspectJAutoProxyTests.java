@@ -42,6 +42,7 @@ public class EnableAspectJAutoProxyTests {
 
 	@Test
 	public void withJdkProxy() {
+		//@EnableAspectJAutoProxy注解的的测试入口
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigWithJdkProxy.class);
 
 		aspectIsApplied(ctx);
